@@ -1,0 +1,985 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Menu" id="Frame_Menu">
+    <child>
+      <object class="tk.Menuitem.Submenu" id="Frame_Menu_Paineis">
+        <property name="label" translatable="yes">PAINÉIS</property>
+        <property name="tearoff">false</property>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Paineis_Historico">
+            <property name="command">bt_menu_paineis_historico_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">HISTÓRICO DE OPERAÇÕES</property>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Paineis_Skills">
+            <property name="command">bt_menu_paineis_skills_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">SKILLS</property>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Menuitem.Separator" id="Separator_5" />
+        </child>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Paineis_Menu">
+            <property name="command">bt_menu_paineis_menu_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">MENU PRINCIPAL</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Menuitem.Submenu" id="Frame_Menu_Cadastro">
+        <property name="label" translatable="yes">CADASTROS</property>
+        <property name="tearoff">false</property>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Cadastro_Produtos">
+            <property name="command">bt_menu_cadastro_produtos_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">PRODUTOS</property>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Cadastro_Colaboradores">
+            <property name="command">bt_menu_cadastro_colaboradores_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">COLABORADORES</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Menuitem.Submenu" id="Frame_Menu_Relatorios">
+        <property name="label" translatable="yes">RELATÓRIOS</property>
+        <property name="tearoff">false</property>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Relatorios_Produtividade">
+            <property name="command">bt_menu_relatorios_produtividade_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">PRODUTOS</property>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Relatorios_Produtos">
+            <property name="command">bt_menu_relatorios_produtos_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">COLABORADORES</property>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Relatorios_RelatorioDia">
+            <property name="command">bt_menu_relatorios_meurelatorio_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">MEU RELATÓRIO DO DIA</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Menuitem.Submenu" id="Frame_Menu_Suporte">
+        <property name="label" translatable="yes">SUPORTE</property>
+        <property name="tearoff">false</property>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Sobre_Desenvolvedores">
+            <property name="command">bt_menu_suporte_desenvolvedores_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">DESENVOLVEDORES</property>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Sobre_Versao">
+            <property name="command">bt_menu_suporte_versao_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">VERSÃO</property>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Menuitem.Command" id="Frame_Menu_Sobre_Ajuda">
+            <property name="command">bt_menu_suporte_ajuda_click</property>
+            <property name="command_id_arg">false</property>
+            <property name="label" translatable="yes">AJUDA</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="tk.Toplevel" id="Frame_Atuacao">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="tk.Frame" id="Frame_Main">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+          <rows>
+            <row id="0">
+              <property name="minsize">0</property>
+              <property name="weight">0</property>
+            </row>
+            <row id="1">
+              <property name="weight">1</property>
+            </row>
+          </rows>
+          <columns>
+            <column id="0">
+              <property name="weight">1</property>
+            </column>
+            <column id="1">
+              <property name="weight">0</property>
+            </column>
+          </columns>
+        </layout>
+        <child>
+          <object class="tk.LabelFrame" id="Label_Informacoes_Gerais">
+            <property name="background">#ff7200</property>
+            <property name="cursor">arrow</property>
+            <property name="foreground">#ffffff</property>
+            <property name="height">100</property>
+            <property name="highlightbackground">#f79c60</property>
+            <property name="highlightcolor">#f79c60</property>
+            <property name="highlightthickness">7</property>
+            <property name="relief">flat</property>
+            <property name="text" translatable="yes">Informações Gerais</property>
+            <property name="width">1280</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="sticky">new</property>
+              <rows>
+                <row id="0">
+                  <property name="weight">0</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="0">
+                  <property name="weight">1</property>
+                </column>
+                <column id="1">
+                  <property name="minsize">0</property>
+                  <property name="weight">1</property>
+                </column>
+                <column id="2">
+                  <property name="minsize">0</property>
+                  <property name="weight">1</property>
+                </column>
+                <column id="3">
+                  <property name="minsize">0</property>
+                  <property name="weight">1</property>
+                </column>
+                <column id="4">
+                  <property name="weight">1</property>
+                </column>
+                <column id="5">
+                  <property name="weight">1</property>
+                </column>
+                <column id="6">
+                  <property name="minsize">0</property>
+                  <property name="pad">0</property>
+                  <property name="weight">1</property>
+                </column>
+                <column id="7">
+                  <property name="minsize">0</property>
+                  <property name="weight">1</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="tk.Canvas" id="Canvas_Logo_Informacoes_Gerais">
+                <property name="background">#ff7200</property>
+                <property name="confine">false</property>
+                <property name="height">50</property>
+                <property name="highlightbackground">#ff7200</property>
+                <property name="width">70</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="Label_Produto_Informacoes_Gerais">
+                <property name="background">#ff7200</property>
+                <property name="exportselection">true</property>
+                <property name="font">{Calibri} 14 {}</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">center</property>
+                <property name="readonlybackground">#ff7200</property>
+                <property name="relief">flat</property>
+                <property name="selectforeground">#ff7200</property>
+                <property name="state">readonly</property>
+                <property name="text" translatable="yes">Produto</property>
+                <property name="textvariable">string:value_label_produto</property>
+                <property name="width">30</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Separator" id="Separator_1">
+                <property name="orient">vertical</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="ipadx">0</property>
+                  <property name="ipady">20</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">e</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="Label_Agencia_Informacoes_Gerais">
+                <property name="background">#ff7200</property>
+                <property name="exportselection">true</property>
+                <property name="font">{Calibri} 14 {}</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">left</property>
+                <property name="readonlybackground">#ff7200</property>
+                <property name="relief">flat</property>
+                <property name="selectforeground">#ff7200</property>
+                <property name="state">readonly</property>
+                <property name="text" translatable="yes">Agência</property>
+                <property name="textvariable">string:value_label_agencia</property>
+                <property name="width">10</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="Label_Conta_Informacoes_Gerais">
+                <property name="background">#ff7200</property>
+                <property name="exportselection">true</property>
+                <property name="font">{Calibri} 14 {}</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">right</property>
+                <property name="readonlybackground">#ff7200</property>
+                <property name="relief">flat</property>
+                <property name="selectforeground">#ff7200</property>
+                <property name="state">readonly</property>
+                <property name="text" translatable="yes">Conta</property>
+                <property name="textvariable">string:value_label_conta</property>
+                <property name="width">8</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                  <property name="sticky">e</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Separator" id="Separator_2">
+                <property name="orient">vertical</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="ipady">20</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">e</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="Label_PN_Informacoes_Gerais">
+                <property name="background">#ff7200</property>
+                <property name="exportselection">true</property>
+                <property name="font">{Calibri} 14 {}</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">center</property>
+                <property name="readonlybackground">#ff7200</property>
+                <property name="relief">flat</property>
+                <property name="selectforeground">#ff7200</property>
+                <property name="state">readonly</property>
+                <property name="text" translatable="yes">PN</property>
+                <property name="textvariable">string:value_label_pn</property>
+                <property name="width">10</property>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                  <property name="sticky">w</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Separator" id="Separator_3">
+                <property name="orient">vertical</property>
+                <layout>
+                  <property name="column">3</property>
+                  <property name="ipady">20</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">e</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Entry" id="Label_CNPJ_Informacoes_Gerais">
+                <property name="background">#ff7200</property>
+                <property name="exportselection">true</property>
+                <property name="font">{Calibri} 14 {}</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">center</property>
+                <property name="readonlybackground">#ff7200</property>
+                <property name="relief">flat</property>
+                <property name="selectforeground">#ff7200</property>
+                <property name="state">readonly</property>
+                <property name="text" translatable="yes">CNPJ</property>
+                <property name="textvariable">string:value_label_cnpj</property>
+                <property name="width">15</property>
+                <layout>
+                  <property name="column">4</property>
+                  <property name="padx">10</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Separator" id="Separator_4">
+                <property name="orient">vertical</property>
+                <layout>
+                  <property name="column">4</property>
+                  <property name="ipady">20</property>
+                  <property name="padx">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">e</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Canvas" id="Canvas_Calendario_Informacoes_Gerais">
+                <property name="background">#ff7200</property>
+                <property name="height">50</property>
+                <property name="highlightbackground">#ff7200</property>
+                <property name="width">70</property>
+                <layout>
+                  <property name="column">5</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="Label_Usuario_Informacoes_Gerais">
+                <property name="anchor">center</property>
+                <property name="background">#ff7200</property>
+                <property name="cursor">arrow</property>
+                <property name="font">{Calibri} 12 {}</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">center</property>
+                <property name="padding">8</property>
+                <property name="text" translatable="yes">USUÁRIO</property>
+                <property name="textvariable">string:value_label_usuario</property>
+                <layout>
+                  <property name="column">6</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="Label_Calendar_Informacoes_Gerais">
+                <property name="anchor">center</property>
+                <property name="background">#ff7200</property>
+                <property name="compound">bottom</property>
+                <property name="font">TkHeadingFont</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">center</property>
+                <property name="padding">0</property>
+                <property name="takefocus">false</property>
+                <property name="textvariable">string:value_label_calendar</property>
+                <layout>
+                  <property name="column">5</property>
+                  <property name="ipadx">10</property>
+                  <property name="ipady">5</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Radiobutton" id="Radiobutton_theme_classic">
+                <property name="activebackground">#ff7200</property>
+                <property name="activeforeground">#ffffff</property>
+                <property name="background">#ff7200</property>
+                <property name="command">radio_classic_theme</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">left</property>
+                <property name="state">disabled</property>
+                <property name="text" translatable="yes">Classic theme</property>
+                <layout>
+                  <property name="column">7</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                  <property name="sticky">ne</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Radiobutton" id="Radiobutton_theme_dark">
+                <property name="activebackground">#ff7200</property>
+                <property name="activeforeground">#ffffff</property>
+                <property name="background">#ff7200</property>
+                <property name="command">radio_dark_theme</property>
+                <property name="cursor">arrow</property>
+                <property name="foreground">#ffffff</property>
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">Dark theme    </property>
+                <layout>
+                  <property name="column">7</property>
+                  <property name="propagate">False</property>
+                  <property name="row">0</property>
+                  <property name="sticky">se</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Frame_Central">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">nsew</property>
+              <rows>
+                <row id="0">
+                  <property name="pad">0</property>
+                  <property name="weight">1</property>
+                </row>
+                <row id="1">
+                  <property name="minsize">0</property>
+                  <property name="pad">0</property>
+                  <property name="weight">0</property>
+                </row>
+                <row id="2">
+                  <property name="weight">0</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="0">
+                  <property name="minsize">0</property>
+                  <property name="pad">0</property>
+                  <property name="weight">0</property>
+                </column>
+                <column id="1">
+                  <property name="minsize">0</property>
+                  <property name="weight">1</property>
+                </column>
+                <column id="2">
+                  <property name="weight">0</property>
+                </column>
+                <column id="3">
+                  <property name="weight">0</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="tk.Frame" id="Frame_Relogio_Sinal">
+                <property name="background">#f79c60</property>
+                <property name="height">768</property>
+                <property name="width">109</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nsw</property>
+                  <rows>
+                    <row id="0">
+                      <property name="weight">0</property>
+                    </row>
+                    <row id="1">
+                      <property name="weight">1</property>
+                    </row>
+                    <row id="2">
+                      <property name="weight">1</property>
+                    </row>
+                  </rows>
+                  <columns>
+                    <column id="0">
+                      <property name="weight">0</property>
+                    </column>
+                  </columns>
+                </layout>
+                <child>
+                  <object class="tk.LabelFrame" id="Frame_Ta">
+                    <property name="background">#ff7200</property>
+                    <property name="font">TkDefaultFont</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="height">50</property>
+                    <property name="highlightbackground">#f79c60</property>
+                    <property name="highlightthickness">2</property>
+                    <property name="text" translatable="yes">Tempo de Analise</property>
+                    <property name="width">110</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="ipady">1</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property name="sticky">n</property>
+                    </layout>
+                    <child>
+                      <object class="tk.Label" id="Label_Relogio">
+                        <property name="background">#ff7200</property>
+                        <property name="font">{Arial} 18 {}</property>
+                        <property name="foreground">#ffffff</property>
+                        <property name="justify">left</property>
+                        <property name="text" translatable="yes">00:00:00</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">n</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.LabelFrame" id="Frame_Sinaleiro">
+                    <property name="background">#ff7200</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="height">710</property>
+                    <property name="highlightbackground">#f79c60</property>
+                    <property name="highlightthickness">2</property>
+                    <property name="text" translatable="yes">Rastreamento</property>
+                    <property name="width">104</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                      <property name="sticky">n</property>
+                      <columns>
+                        <column id="0">
+                          <property name="minsize">0</property>
+                          <property name="pad">0</property>
+                        </column>
+                      </columns>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Frame" id="Frame_meio">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nsew</property>
+                  <rows>
+                    <row id="0">
+                      <property name="pad">0</property>
+                      <property name="weight">1</property>
+                    </row>
+                    <row id="1">
+                      <property name="pad">0</property>
+                      <property name="weight">0</property>
+                    </row>
+                    <row id="2">
+                      <property name="pad">1</property>
+                      <property name="weight">0</property>
+                    </row>
+                  </rows>
+                  <columns>
+                    <column id="0">
+                      <property name="pad">0</property>
+                      <property name="weight">1</property>
+                    </column>
+                    <column id="1">
+                      <property name="weight">0</property>
+                    </column>
+                  </columns>
+                </layout>
+                <child>
+                  <object class="tk.LabelFrame" id="Frame_Campos">
+                    <property name="background">#dddddd</property>
+                    <property name="cursor">arrow</property>
+                    <property name="font">{arial} 13 {}</property>
+                    <property name="foreground">#7e7e7e</property>
+                    <property name="height">200</property>
+                    <property name="text" translatable="yes">Atuação</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property name="sticky">nsew</property>
+                      <rows>
+                        <row id="0">
+                          <property name="minsize">0</property>
+                          <property name="pad">0</property>
+                          <property name="weight">0</property>
+                        </row>
+                      </rows>
+                      <columns>
+                        <column id="0">
+                          <property name="weight">1</property>
+                        </column>
+                        <column id="1">
+                          <property name="weight">1</property>
+                        </column>
+                        <column id="2">
+                          <property name="weight">1</property>
+                        </column>
+                      </columns>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.LabelFrame" id="Frame_Email">
+                    <property name="background">#ff7200</property>
+                    <property name="font">{Arial} 12 {}</property>
+                    <property name="foreground">#ffffff</property>
+                    <property name="height">200</property>
+                    <property name="highlightbackground">#f79c60</property>
+                    <property name="highlightcolor">#f79c60</property>
+                    <property name="highlightthickness">2</property>
+                    <property name="text" translatable="yes">E-mail</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="columnspan">2</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                      <property name="sticky">nsew</property>
+                      <rows>
+                        <row id="0">
+                          <property name="weight">1</property>
+                        </row>
+                        <row id="1">
+                          <property name="weight">0</property>
+                        </row>
+                      </rows>
+                      <columns>
+                        <column id="0">
+                          <property name="weight">1</property>
+                        </column>
+                      </columns>
+                    </layout>
+                    <child>
+                      <object class="tk.Button" id="bt_buscar_emails">
+                        <property name="activebackground">#ff7200</property>
+                        <property name="activeforeground">#ff7200</property>
+                        <property name="background">#ff7200</property>
+                        <property name="borderwidth">0</property>
+                        <property name="compound">top</property>
+                        <property name="cursor">hand2</property>
+                        <property name="disabledforeground">#ff7200</property>
+                        <property name="foreground">#ff7200</property>
+                        <property name="highlightbackground">#ff7200</property>
+                        <property name="highlightcolor">#ff7200</property>
+                        <property name="highlightthickness">0</property>
+                        <property name="overrelief">flat</property>
+                        <property name="relief">flat</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">s</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Text" id="Text_Email">
+                        <property name="background">#f5f5f5</property>
+                        <property name="height">10</property>
+                        <property name="width">50</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="padx">10</property>
+                          <property name="pady">10</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                          <property name="sticky">sew</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Frame" id="Frame_Adicionais">
+                <property name="background">#ff7200</property>
+                <property name="height">768</property>
+                <property name="highlightbackground">#f79c60</property>
+                <property name="highlightcolor">#f79c60</property>
+                <property name="highlightthickness">7</property>
+                <property name="width">282</property>
+                <layout>
+                  <property name="column">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                  <property name="sticky">nse</property>
+                  <rows>
+                    <row id="0">
+                      <property name="minsize">0</property>
+                      <property name="weight">0</property>
+                    </row>
+                    <row id="1">
+                      <property name="minsize">0</property>
+                      <property name="pad">0</property>
+                      <property name="weight">0</property>
+                    </row>
+                    <row id="2">
+                      <property name="minsize">0</property>
+                      <property name="weight">0</property>
+                    </row>
+                  </rows>
+                  <columns>
+                    <column id="0">
+                      <property name="weight">0</property>
+                    </column>
+                    <column id="1">
+                      <property name="minsize">0</property>
+                    </column>
+                  </columns>
+                </layout>
+                <child>
+                  <object class="tk.Button" id="bt_pausar_op">
+                    <property name="activebackground">#ff7200</property>
+                    <property name="activeforeground">#ff7200</property>
+                    <property name="background">#ff7200</property>
+                    <property name="borderwidth">0</property>
+                    <property name="command">bt_pausar_op_click</property>
+                    <property name="cursor">hand2</property>
+                    <property name="disabledforeground">#ff7200</property>
+                    <property name="font">{arial} 12 {bold}</property>
+                    <property name="foreground">#ff7200</property>
+                    <property name="highlightbackground">#ff7200</property>
+                    <property name="highlightcolor">#ff7200</property>
+                    <property name="highlightthickness">0</property>
+                    <property name="text" translatable="yes">Pausar Operações</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="padx">19</property>
+                      <property name="pady">20</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property name="sticky">n</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="Frame_Anotacoes">
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="padx">19</property>
+                      <property name="propagate">True</property>
+                      <property name="row">1</property>
+                      <property name="sticky">n</property>
+                      <rows>
+                        <row id="0">
+                          <property name="weight">0</property>
+                        </row>
+                        <row id="1">
+                          <property name="weight">0</property>
+                        </row>
+                      </rows>
+                      <columns>
+                        <column id="0">
+                          <property name="weight">0</property>
+                        </column>
+                        <column id="1">
+                          <property name="weight">0</property>
+                        </column>
+                      </columns>
+                    </layout>
+                    <child>
+                      <object class="tk.Text" id="txt_anotacoes_1">
+                        <property name="autoseparators">false</property>
+                        <property name="background">#f5f5f5</property>
+                        <property name="blockcursor">true</property>
+                        <property name="cursor">xterm</property>
+                        <property name="font">{@Meiryo} 10 {}</property>
+                        <property name="height">7</property>
+                        <property name="insertunfocussed">none</property>
+                        <property name="state">normal</property>
+                        <property name="tabstyle">tabular</property>
+                        <property name="takefocus">false</property>
+                        <property name="text" translatable="yes">Anotações</property>
+                        <property name="width">30</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Scrollbar" id="Scrollbar_anotacoes1">
+                        <property name="cursor">based_arrow_up</property>
+                        <property name="orient">vertical</property>
+                        <layout>
+                          <property name="column">1</property>
+                          <property name="ipady">36</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                          <property name="sticky">e</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Frame" id="Frame_Decisao">
+                    <property name="background">#ff7200</property>
+                    <property name="height">200</property>
+                    <property name="highlightbackground">#f5f5f5</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="padx">19</property>
+                      <property name="propagate">True</property>
+                      <property name="row">2</property>
+                      <property name="sticky">n</property>
+                      <rows>
+                        <row id="0">
+                          <property name="weight">0</property>
+                        </row>
+                        <row id="1">
+                          <property name="weight">0</property>
+                        </row>
+                      </rows>
+                      <columns>
+                        <column id="0">
+                          <property name="weight">0</property>
+                        </column>
+                        <column id="1">
+                          <property name="weight">0</property>
+                        </column>
+                      </columns>
+                    </layout>
+                    <child>
+                      <object class="tk.Button" id="bt_aprovar">
+                        <property name="activebackground">#ff7200</property>
+                        <property name="activeforeground">#ff7200</property>
+                        <property name="background">#ff7200</property>
+                        <property name="borderwidth">0</property>
+                        <property name="command">bt_aprovar_click</property>
+                        <property name="cursor">hand2</property>
+                        <property name="disabledforeground">#ff7200</property>
+                        <property name="font">{Arial} 12 {bold}</property>
+                        <property name="foreground">#ff7200</property>
+                        <property name="highlightbackground">#ff7200</property>
+                        <property name="highlightcolor">#ff7200</property>
+                        <property name="relief">flat</property>
+                        <property name="text" translatable="yes">Aprovar </property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="padx">5</property>
+                          <property name="pady">5</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="bt_devolver">
+                        <property name="activebackground">#ff7200</property>
+                        <property name="activeforeground">#ff7200</property>
+                        <property name="background">#ff7200</property>
+                        <property name="borderwidth">0</property>
+                        <property name="command">bt_devolver_click</property>
+                        <property name="cursor">hand2</property>
+                        <property name="disabledforeground">#ff7200</property>
+                        <property name="font">{arial} 12 {bold}</property>
+                        <property name="overrelief">flat</property>
+                        <property name="relief">flat</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="padx">5</property>
+                          <property name="pady">5</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="bt_followup">
+                        <property name="activebackground">#ff7200</property>
+                        <property name="activeforeground">#ff7200</property>
+                        <property name="background">#ff7200</property>
+                        <property name="borderwidth">0</property>
+                        <property name="command">bt_followup_click</property>
+                        <property name="cursor">hand2</property>
+                        <property name="disabledforeground">#ff7200</property>
+                        <property name="font">{arial} 12 {bold}</property>
+                        <property name="foreground">#ff7200</property>
+                        <property name="highlightbackground">#ff7200</property>
+                        <property name="highlightcolor">#ff7200</property>
+                        <property name="relief">flat</property>
+                        <property name="text" translatable="yes">Follow Up</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="padx">5</property>
+                          <property name="pady">5</property>
+                          <property name="propagate">True</property>
+                          <property name="row">2</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="tk.Button" id="bt_duplicidade">
+                        <property name="activebackground">#ff7200</property>
+                        <property name="activeforeground">#ff7200</property>
+                        <property name="background">#ff7200</property>
+                        <property name="borderwidth">0</property>
+                        <property name="command">bt_duplicidade_click</property>
+                        <property name="cursor">hand2</property>
+                        <property name="disabledforeground">#ff7200</property>
+                        <property name="font">{arial} 12 {bold}</property>
+                        <property name="foreground">#ff7200</property>
+                        <property name="highlightbackground">#ff7200</property>
+                        <property name="highlightcolor">#ff7200</property>
+                        <property name="relief">flat</property>
+                        <property name="text" translatable="yes">Duplicidade</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="padx">5</property>
+                          <property name="pady">5</property>
+                          <property name="propagate">True</property>
+                          <property name="row">3</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

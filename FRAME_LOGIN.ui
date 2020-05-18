@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Frame" id="frame_login">
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+      <rows>
+        <row id="0">
+          <property name="weight">0</property>
+        </row>
+      </rows>
+    </layout>
+    <child>
+      <object class="tk.Frame" id="Frame_1">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="tk.Canvas" id="canvas_logo">
+            <property name="background">#ffffff</property>
+            <property name="height">300</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="ipady">200</property>
+              <property name="pady">0</property>
+              <property name="propagate">False</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Canvas" id="canvas_bemvindo">
+        <property name="background">#28334A</property>
+        <property name="highlightbackground">#28334A</property>
+        <property name="highlightcolor">#28334A</property>
+        <property name="highlightthickness">5</property>
+        <property name="insertbackground">#28334A</property>
+        <property name="relief">flat</property>
+        <property name="selectbackground">#28334A</property>
+        <property name="selectforeground">#28334A</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="ipady">70</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">n</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="entry_usuario">
+        <property name="font">TkTextFont</property>
+        <property name="justify">center</property>
+        <property name="state">normal</property>
+        <property name="text" translatable="yes">Funcional do Usuário</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="ipadx">50</property>
+          <property name="pady">150</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">n</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="entry_senha">
+        <property name="cursor">arrow</property>
+        <property name="font">TkTextFont</property>
+        <property name="justify">center</property>
+        <property name="show">•</property>
+        <property name="text" translatable="yes">Senha</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="ipadx">50</property>
+          <property name="padx">50</property>
+          <property name="pady">180</property>
+          <property name="propagate">False</property>
+          <property name="row">0</property>
+          <property name="sticky">n</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="bt_entrar">
+        <property name="activebackground">#28334A</property>
+        <property name="activeforeground">#28334A</property>
+        <property name="background">#28334A</property>
+        <property name="borderwidth">0</property>
+        <property name="command">bt_entrar_click</property>
+        <property name="cursor">arrow</property>
+        <property name="disabledforeground">#28334A</property>
+        <property name="image">Entrar2.png</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">ENTRAR</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="padx">50</property>
+          <property name="pady">213</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">n</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Progressbar" id="Progressbar_Entrar">
+        <property name="length">180</property>
+        <property name="maximum">230</property>
+        <property name="mode">determinate</property>
+        <property name="orient">horizontal</property>
+        <property name="variable">string:barVar</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="pady">262</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">n</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Label_1">
+        <property name="anchor">center</property>
+        <property name="background">#28334A</property>
+        <property name="borderwidth">0</property>
+        <property name="font">TkHeadingFont</property>
+        <property name="foreground">#ffffff</property>
+        <property name="justify">center</property>
+        <property name="relief">groove</property>
+        <property name="text" translatable="yes">ANALYTICS - AUTOMAÇÃO SOAS</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="ipady">3</property>
+          <property name="pady">300</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">n</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

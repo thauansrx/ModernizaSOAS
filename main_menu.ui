@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Toplevel" id="main">
+    <child>
+      <object class="tk.Frame" id="Frame_responsivo">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+          <rows>
+            <row id="0">
+              <property name="weight">1</property>
+            </row>
+          </rows>
+          <columns>
+            <column id="0">
+              <property name="weight">1</property>
+            </column>
+            <column id="1">
+              <property name="weight">1</property>
+            </column>
+            <column id="2">
+              <property name="weight">1</property>
+            </column>
+            <column id="3">
+              <property name="weight">1</property>
+            </column>
+          </columns>
+        </layout>
+        <child>
+          <object class="tk.Canvas" id="fundo">
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">4</property>
+              <property name="ipadx">400</property>
+              <property name="ipady">150</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">nsew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Frame_paineis">
+            <property name="height">200</property>
+            <property name="width">100</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <rows>
+                <row id="0">
+                  <property name="weight">1</property>
+                </row>
+                <row id="1">
+                  <property name="weight">0</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="0">
+                  <property name="weight">1</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="tk.Button" id="Bt_paineis">
+                <property name="activebackground">#000000</property>
+                <property name="activeforeground">#000000</property>
+                <property name="background">#000000</property>
+                <property name="borderwidth">0</property>
+                <property name="command">abrir_paineis</property>
+                <property name="disabledforeground">#000000</property>
+                <property name="foreground">#000000</property>
+                <property name="highlightbackground">#000000</property>
+                <property name="highlightcolor">#000000</property>
+                <property name="highlightthickness">0</property>
+                <property name="overrelief">flat</property>
+                <property name="relief">flat</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Frame_cadastro">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <rows>
+                <row id="0">
+                  <property name="weight">1</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="0">
+                  <property name="weight">1</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="tk.Button" id="Bt_cadastro">
+                <property name="activebackground">#000000</property>
+                <property name="activeforeground">#000000</property>
+                <property name="background">#000000</property>
+                <property name="borderwidth">0</property>
+                <property name="command">abrir_cadastro</property>
+                <property name="disabledforeground">#000000</property>
+                <property name="foreground">#000000</property>
+                <property name="highlightbackground">#000000</property>
+                <property name="highlightcolor">#000000</property>
+                <property name="highlightthickness">0</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Frame_relatorios">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <rows>
+                <row id="0">
+                  <property name="weight">1</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="0">
+                  <property name="weight">1</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="tk.Button" id="Bt_relatorios">
+                <property name="activebackground">#000000</property>
+                <property name="activeforeground">#000000</property>
+                <property name="background">#000000</property>
+                <property name="borderwidth">0</property>
+                <property name="command">abrir_relatorios</property>
+                <property name="disabledforeground">#000000</property>
+                <property name="foreground">#000000</property>
+                <property name="highlightbackground">#000000</property>
+                <property name="highlightcolor">#000000</property>
+                <property name="highlightthickness">0</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Frame_suporte">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <rows>
+                <row id="0">
+                  <property name="weight">1</property>
+                </row>
+              </rows>
+              <columns>
+                <column id="0">
+                  <property name="weight">1</property>
+                </column>
+              </columns>
+            </layout>
+            <child>
+              <object class="tk.Button" id="Bt_suporte">
+                <property name="activebackground">#000000</property>
+                <property name="activeforeground">#000000</property>
+                <property name="background">#000000</property>
+                <property name="borderwidth">0</property>
+                <property name="command">abrir_suporte</property>
+                <property name="disabledforeground">#000000</property>
+                <property name="foreground">#000000</property>
+                <property name="highlightbackground">#000000</property>
+                <property name="highlightcolor">#000000</property>
+                <property name="highlightthickness">0</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

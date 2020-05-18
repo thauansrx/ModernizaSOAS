@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Toplevel" id="main">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="tk.Frame" id="Frame_responsivo">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+          <rows>
+            <row id="0">
+              <property name="weight">1</property>
+            </row>
+            <row id="1">
+              <property name="weight">1</property>
+            </row>
+            <row id="2">
+              <property name="weight">1</property>
+            </row>
+            <row id="3">
+              <property name="weight">0</property>
+            </row>
+            <row id="4">
+              <property name="weight">0</property>
+            </row>
+          </rows>
+          <columns>
+            <column id="0">
+              <property name="weight">1</property>
+            </column>
+          </columns>
+        </layout>
+        <child>
+          <object class="tk.Canvas" id="fundo">
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="rowspan">3</property>
+              <property name="sticky">nsew</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Frame_colaboradores">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+            <child>
+              <object class="tk.Button" id="Bt_colaboradores">
+                <property name="borderwidth">0</property>
+                <property name="command">bt_cadastrar_colaboradores</property>
+                <property name="cursor">hand2</property>
+                <property name="highlightthickness">0</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Frame_produtos">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+            <child>
+              <object class="tk.Button" id="Bt_produtos">
+                <property name="borderwidth">0</property>
+                <property name="command">bt_cadastrar_produtos</property>
+                <property name="cursor">hand2</property>
+                <property name="highlightthickness">0</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Frame" id="Frame_voltar">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+            <child>
+              <object class="tk.Button" id="Bt_voltar">
+                <property name="activebackground">#000000</property>
+                <property name="activeforeground">#000000</property>
+                <property name="background">#000000</property>
+                <property name="borderwidth">0</property>
+                <property name="command">voltar_main_menu</property>
+                <property name="cursor">hand2</property>
+                <property name="disabledforeground">#000000</property>
+                <property name="foreground">#000000</property>
+                <property name="height">0</property>
+                <property name="highlightbackground">#000000</property>
+                <property name="highlightcolor">#000000</property>
+                <property name="highlightthickness">0</property>
+                <property name="overrelief">flat</property>
+                <property name="relief">flat</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="frame_atuacao">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Labelframe" id="Label_Informacoes_Gerais">
+        <property name="cursor">arrow</property>
+        <property name="height">100</property>
+        <property name="padding">7</property>
+        <property name="text" translatable="yes">Informações Gerais	</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <columns>
+            <column id="0">
+              <property name="minsize">0</property>
+              <property name="weight">0</property>
+            </column>
+          </columns>
+        </layout>
+        <child>
+          <object class="tk.Canvas" id="Canvas_Logo_Informacoes_Gerais">
+            <property name="background">#ffffff</property>
+            <property name="confine">false</property>
+            <property name="height">50</property>
+            <property name="width">70</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="Label_Produto_Informacoes_Gerais">
+            <property name="anchor">w</property>
+            <property name="background">#ffffff</property>
+            <property name="compound">top</property>
+            <property name="font">TkHeadingFont</property>
+            <property name="justify">center</property>
+            <property name="padding">10</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Produto</property>
+            <property name="textvariable">string:value_label_produto</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="ipadx">150</property>
+              <property name="padx">40</property>
+              <property name="propagate">False</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator_1">
+            <property name="orient">vertical</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="ipadx">0</property>
+              <property name="ipady">20</property>
+              <property name="padx">40</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="Label_Agencia_Informacoes_Gerais">
+            <property name="anchor">w</property>
+            <property name="background">#ffffff</property>
+            <property name="font">TkHeadingFont</property>
+            <property name="justify">center</property>
+            <property name="padding">10</property>
+            <property name="text" translatable="yes">Agência</property>
+            <property name="textvariable">string:value_label_agencia</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="padx">80</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="Label_Conta_Informacoes_Gerais">
+            <property name="anchor">w</property>
+            <property name="background">#ffffff</property>
+            <property name="font">TkHeadingFont</property>
+            <property name="justify">center</property>
+            <property name="padding">10</property>
+            <property name="text" translatable="yes">Conta</property>
+            <property name="textvariable">string:value_label_conta</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator_2">
+            <property name="orient">vertical</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="ipady">20</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="Label_PN_Informacoes_Gerais">
+            <property name="anchor">w</property>
+            <property name="background">#ffffff</property>
+            <property name="font">TkHeadingFont</property>
+            <property name="justify">center</property>
+            <property name="padding">10</property>
+            <property name="text" translatable="yes">PN</property>
+            <property name="textvariable">string:value_label_pn</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="padx">40</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator_3">
+            <property name="orient">vertical</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="ipady">20</property>
+              <property name="padx">40</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="Label_CNPJ_Informacoes_Gerais">
+            <property name="anchor">w</property>
+            <property name="background">#ffffff</property>
+            <property name="font">TkHeadingFont</property>
+            <property name="justify">center</property>
+            <property name="padding">10</property>
+            <property name="text" translatable="yes">CNPJ</property>
+            <property name="textvariable">string:value_label_cnpj</property>
+            <layout>
+              <property name="column">4</property>
+              <property name="padx">40</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator_4">
+            <property name="orient">vertical</property>
+            <layout>
+              <property name="column">4</property>
+              <property name="ipady">20</property>
+              <property name="padx">40</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Canvas" id="Canvas_Calendario_Informacoes_Gerais">
+            <property name="height">50</property>
+            <property name="width">70</property>
+            <layout>
+              <property name="column">5</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="Label_Usuario_Informacoes_Gerais">
+            <property name="anchor">center</property>
+            <property name="background">#ffffff</property>
+            <property name="cursor">arrow</property>
+            <property name="font">TkHeadingFont</property>
+            <property name="justify">center</property>
+            <property name="padding">10</property>
+            <property name="text" translatable="yes">USUÁRIO</property>
+            <property name="textvariable">string:value_label_usuario</property>
+            <layout>
+              <property name="column">6</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="Label_Calendar_Informacoes_Gerais">
+            <property name="anchor">center</property>
+            <property name="compound">bottom</property>
+            <property name="font">TkHeadingFont</property>
+            <property name="foreground">#0000ff</property>
+            <property name="justify">center</property>
+            <property name="padding">0</property>
+            <property name="takefocus">false</property>
+            <property name="textvariable">string:value_label_calendar</property>
+            <layout>
+              <property name="column">5</property>
+              <property name="ipadx">10</property>
+              <property name="ipady">5</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Canvas" id="Canvas_1">
+            <property name="background">#ffffff</property>
+            <property name="confine">false</property>
+            <property name="cursor">arrow</property>
+            <property name="height">57</property>
+            <property name="takefocus">false</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">7</property>
+              <property name="ipadx">400</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="Frame_Adicionais">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">e</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="bt_proximaop">
+            <property name="command">bt_proximaop_click</property>
+            <property name="text" translatable="yes">Próxima Operação</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="ipady">10</property>
+              <property name="pady">10</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Text" id="txt_anotacoes">
+            <property name="autoseparators">false</property>
+            <property name="blockcursor">true</property>
+            <property name="font">TkTextFont</property>
+            <property name="height">7</property>
+            <property name="insertunfocussed">none</property>
+            <property name="state">normal</property>
+            <property name="tabstyle">tabular</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">Anotações</property>
+            <property name="width">30</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="Frame_Campos">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">w</property>
+        </layout>
+        <child>
+          <object class="ttk.Separator" id="Separator_10">
+            <property name="orient">horizontal</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="ipady">10</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator_5">
+            <property name="orient">horizontal</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="ipady">5</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator_6">
+            <property name="orient">horizontal</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="ipady">5</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator_7">
+            <property name="orient">horizontal</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="ipady">5</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator_8">
+            <property name="orient">horizontal</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="ipady">5</property>
+              <property name="propagate">True</property>
+              <property name="row">8</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Separator" id="Separator_9">
+            <property name="orient">horizontal</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="ipady">5</property>
+              <property name="propagate">True</property>
+              <property name="row">10</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
